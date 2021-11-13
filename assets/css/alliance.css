@@ -1,0 +1,878 @@
+body
+{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    color: black;
+
+    background: #fff;
+}
+
+*,
+*:before
+*:after
+{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    margin: 0;
+}
+
+
+
+
+/*/ Seperator /*/
+
+.seperator
+{
+    width: 100%;
+    height: 95px;
+
+    text-align: center;
+
+    background: #1B1B1B;
+}
+
+.section__inner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*/ Seperator /*/
+
+
+
+
+/*/ Header /*/
+
+.header1
+{
+    width: 100%;
+    height: 94px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    background: #1b1b1b5b;
+    margin: 0 auto 50px;
+}
+
+.header
+{
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 3px;
+    z-index: 1000;
+
+    padding-top: 0px;
+}
+
+.header__inner
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 210px;
+}
+
+.logo
+{
+    font-size: 30px;
+    font-weight: 700;
+
+    transition: all .2s linear;
+}
+
+.logo__img
+{
+    transition: transform .2s linear;
+}
+
+.logo .logo__img
+{
+    transform: translate3d(0, 5px, 0);
+}
+
+.logo:hover
+{
+    transform: scale(1.02);
+}
+
+/*/ Nav /*/
+
+.nav *
+{
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul, .nav ol
+{
+    list-style: none;
+}
+
+.nav > ul
+{
+    display: flex;
+}
+
+.nav > ul li a
+{
+    display: block;
+    padding: 15px 25px;
+
+    background: #1b1b1bc2;
+    color: #fff;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: all .2s linear;
+}
+
+nav > ul li .allia
+{
+    display: block;
+    padding: 15px 25px;
+
+    background: #1b1b1bc2;
+    color: #ffcc00;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: all .2s linear;
+}
+
+nav > ul li .chara
+{
+    display: block;
+    padding: 15px 25px;
+
+    background: #1b1b1bc2;
+    color: #ffcc00;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: all .2s linear;
+}
+
+.nav li a:hover
+{
+    color: #ffcc00;
+    transition: all .2s linear;
+}
+
+/* Sub Nav */
+
+.nav li ul
+{
+    position: absolute;
+
+    min-width: 180px;
+
+    text-align: center;
+
+    display: none;
+}
+
+.nav li:hover > ul
+{
+    display: block;
+}
+
+.nav li > ul li a
+{
+    padding: 10px;
+    font-size: 17px;
+    text-transform: none;
+}
+
+.nav li > ul li ul
+{
+    min-width: 150px;
+    position: absolute;
+    right: -217.9px;
+    top: 26px;
+}
+
+.npmsa
+{
+    min-width: 197px;
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+
+.orga
+{
+    min-width: 200.5px;
+    position: absolute;
+    right: 16px;
+    top: 69px;
+}
+
+/*/ Nav /*/
+
+
+
+
+/* Section */
+
+.section
+{
+    width: 100%;
+    height: 3095px;
+
+    display: flex;
+
+    text-align: center;
+
+    background: url(../image/Characters/Alliance/Background.jpg) center no-repeat;
+    background-size: cover;
+}
+
+/* Section */
+
+
+
+
+/*/ Container /*/
+
+.container
+{
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+/*/ Container /*/
+
+
+
+
+/*/ Alliance /*/
+
+.alliance
+{
+    margin: 100px auto;
+    padding: 35px 0;
+
+    width: 1300px;
+    height: 2810px;
+
+    background: #29353bf6;
+    border: 6px solid #36454de8;
+    border-radius: 8px;
+
+    text-align: center;
+    align-items: center;
+}
+
+.alliance__text1 
+{
+    margin-top: 50px;
+
+    text-transform: uppercase;
+    
+    font-size: 50px;
+    font-weight: 700;
+
+    color: #fff;
+
+    transition: all .8s ease;
+
+    text-decoration: none;
+}
+
+.alliance__text1:hover
+{
+    color: #da449b;
+}
+
+
+/* Alliance Information */
+
+.alliance__inf
+{
+    padding-top: 35px;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.all__item
+{
+    width: 1150px;
+    height: 613px;
+
+    border: 4px solid black;
+
+    position: relative;
+}
+
+.all__img
+{
+    background: linear-gradient(to bottom, #000000, #b64185);
+}
+
+.all__img img
+{
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.all__item:hover .all__img img{
+    opacity: .3;
+}
+
+.all__text
+{
+    width: 100%;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+
+    opacity: 0;
+
+    color: #fff;
+
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 3%;
+    left: 0;
+    z-index: 2;
+    
+    transition: opacity .9s ease;
+
+    cursor: pointer;
+}
+
+.all__item:hover .all__text
+{
+    opacity: 1;
+}
+
+.all__subtext
+{
+    padding: 25px;
+
+    width: 100%;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+
+    opacity: 0;
+
+    color: #fff;
+
+    position: absolute;
+    top: 9%;
+    left: -2.2%;
+    z-index: 2;
+    
+    transition: all .9s ease;
+
+    cursor: pointer;
+}
+
+.all__item:hover .all__subtext
+{
+    opacity: 1;
+}
+
+/* Alliance Information */
+
+
+.all__item::after
+{
+    content: "";
+    width: 1300px;
+
+    transform: translateX(-5.79%);
+
+    height: 6px;
+
+    display: block;
+
+    background-color: #36454de8;
+
+    z-index: 3;
+
+    margin: 65px auto;
+}
+
+
+/* Leaders */
+
+.alliance__text2
+{
+    padding: 100px 0 20px;
+
+    text-transform: uppercase;
+    
+    font-size: 50px;
+    font-weight: 700;
+
+    color: white;
+}
+
+.leaders
+{
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    margin: 0 20px;
+}
+
+.lead__item
+{
+    display: flex;
+    justify-content: center;
+
+    border: 4px solid black;
+
+    width: 300px;
+    height: 300px;
+
+    position: relative;
+}
+
+.lead__text
+{
+    width: 100%;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+
+    opacity: 0;
+
+    color: #fff;
+
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+    
+    transition: all .6s ease;
+
+    cursor: pointer;
+}
+
+.lead__item:hover .lead__text
+{
+    opacity: 1;
+    font-size: 36.7px;
+}
+
+
+/* Leader */
+
+.luffy
+{
+    background: linear-gradient(to bottom, #000000, #cc0000);
+}
+
+.luffy img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.lead__item:hover .luffy img{
+    opacity: .4;
+}
+
+
+.law
+{
+    background: linear-gradient(to bottom, #000000, #1b1b1b);
+}
+
+.law img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.lead__item:hover .law img{
+    opacity: .4;
+}
+
+
+.momo
+{
+    background: linear-gradient(to bottom, #000000, #e205ff);
+}
+
+.momo img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.lead__item:hover .momo img{
+    opacity: .4;
+}
+
+/* Leader */
+
+/* Leaders */
+
+
+.alliance__text2::after
+{
+    content: "";
+    width: 1300px;
+
+    transform: translateX(-5.79%);
+    transform: translateY(420px);
+
+    height: 6px;
+
+    display: block;
+
+    background-color: #36454de8;
+
+    z-index: 3;
+}
+
+
+/* Leaders Crews */
+
+.crew__item
+{
+    display: flex;
+    justify-content: center;
+
+    border: 4px solid black;
+
+    width: 250px;
+    height: 250px;
+
+    position: relative;
+
+    margin-top: 20px;
+}
+
+.crew__text
+{
+    width: 100%;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+
+    line-height: 1.1;
+
+    opacity: 0;
+
+    color: #fff;
+
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+    
+    transition: all .6s ease;
+
+    cursor: pointer;
+}
+
+
+.crew__item:hover .crew__text
+{
+    opacity: 1;
+    font-size: 29px;
+}
+
+.strawhat
+{
+    background: linear-gradient(to bottom, #000000, #ad2401);
+}
+
+.strawhat img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.crew__item:hover .strawhat img{
+    opacity: .4;
+}
+
+
+.heart__pirates
+{
+    background: linear-gradient(to bottom, #000000, #c5b800);
+}
+
+.heart__pirates img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.crew__item:hover .heart__pirates img{
+    opacity: .4;
+}
+
+
+.kozuki
+{
+    background: linear-gradient(to bottom, #000000, #059c00);
+}
+
+.kozuki img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.crew__item:hover .kozuki img{
+    opacity: .4;
+}
+
+
+.minki
+{
+    background: linear-gradient(to bottom, #000000, #54f9ff);
+}
+
+.minki img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.crew__item:hover .minki img{
+    opacity: .4;
+}
+
+/* Leaders Crews */
+
+
+/* Alliance Allies */
+
+.alliance__text3
+{
+    padding: 120px 0 25px;
+
+    text-transform: uppercase;
+    
+    font-size: 50px;
+    font-weight: 700;
+
+    color: white;
+}
+
+.alliance__allies
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.allies
+{
+    padding: 20px 0 50px;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    margin: 0 30px;
+}
+
+.allies__item
+{
+    display: flex;
+    justify-content: space-evenly;
+
+    border: 4px solid black;
+
+    width: 300px;
+    height: 300px;
+
+    position: relative;
+}
+
+.allies__text
+{
+    width: 100%;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.4;
+
+    opacity: 0;
+
+    color: #fff;
+
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+    
+    transition: all .6s ease;
+
+    cursor: pointer;
+}
+
+.allies__item:hover .allies__text
+{
+    opacity: 1;
+    font-size: 38px;
+}
+
+
+/* Friends */
+
+.yakuza
+{
+    background: linear-gradient(to bottom, #000000, #1b1b1b);
+}
+
+.yakuza img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.allies__item:hover .yakuza img{
+    opacity: .4;
+}
+
+
+.kyoshiro
+{
+    background: linear-gradient(to bottom, #000000, #003cff);
+}
+
+.kyoshiro img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.allies__item:hover .kyoshiro img{
+    opacity: .4;
+}
+
+
+.kid
+{
+    background: linear-gradient(to bottom, #000000, #cc0000);
+}
+
+.kid img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.allies__item:hover .kid img{
+    opacity: .4;
+}
+
+
+.izo
+{
+    background: linear-gradient(to bottom, #000000, #5700b9);
+}
+
+.izo img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.allies__item:hover .izo img{
+    opacity: .4;
+}
+
+
+.marko
+{
+    background: linear-gradient(to bottom, #000000, #00eeff);
+}
+
+.marko img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.allies__item:hover .marko img{
+    opacity: .4;
+}
+
+
+.yamato
+{
+    background: linear-gradient(to bottom, #000000, #00ffdd);
+}
+
+.yamato img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.allies__item:hover .yamato img{
+    opacity: .4;
+}
+
+/* Friends */
+
+/* Alliance Allies */
+
+
+/*/ Alliance /*/

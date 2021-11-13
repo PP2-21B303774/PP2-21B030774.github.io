@@ -1,0 +1,436 @@
+body
+{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    color: black;
+
+    background: #fff;
+}
+
+*,
+*:before
+*:after
+{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    margin: 0;
+}
+
+
+
+
+/* Menu */
+
+.menu
+{
+    width: 100%;
+    height: 95px;
+
+    text-align: center;
+
+    background: #1B1B1B;
+}
+
+.menu__inner
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+/*/ Seperator /*/
+
+.seperator
+{
+    width: 100%;
+    height: 95px;
+
+    text-align: center;
+
+    background: #1B1B1B;
+}
+
+.section__inner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*/ Seperator /*/
+
+
+
+
+/*/ Header /*/
+
+.header1
+{
+    width: 100%;
+    height: 94px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    background: #1b1b1b5b;
+    margin: 0 auto 50px;
+}
+
+.header
+{
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 3px;
+    z-index: 1000;
+
+    padding-top: 0px;
+}
+
+.header__inner
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    font-size: 30px;
+    font-weight: 700;
+
+    transition: all .2s linear;
+}
+
+.logo__img
+{
+    transition: transform .2s linear;
+}
+
+.logo .logo__img
+{
+    transform: translate3d(0, 5px, 0);
+}
+
+.logo:hover
+{
+    transform: scale(1.02);
+}
+
+/*/ Nav /*/
+
+.nav *
+{
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+}
+
+.nav ul, .nav ol
+{
+    list-style: none;
+}
+
+.nav > ul
+{
+    display: flex;
+}
+
+.nav > ul li a
+{
+    display: block;
+    padding: 15px 25px;
+
+    background: #1b1b1bb7;
+    color: #fff;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: all .2s linear;
+}
+
+nav ul li > .four_e
+{
+    display: block;
+    padding: 15px 25px;
+
+    background: #1b1b1bb7;
+    color: #ffcc00;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: all .2s linear;
+}
+
+nav ul li > .organizations
+{
+    display: block;
+    padding: 15px 25px;
+
+    background: #1b1b1bb7;
+    color: #ffcc00;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: all .2s linear;
+}
+
+nav > ul li .chara
+{
+    display: block;
+    padding: 15px 25px;
+
+    background: #1b1b1bb7;
+    color: #ffcc00;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: all .2s linear;
+}
+
+.nav li a:hover
+{
+    color: #ffcc00;
+    transition: all .2s linear;
+}
+
+/* Sub Nav */
+
+.nav li ul
+{
+    position: absolute;
+
+    min-width: 180px;
+
+    text-align: center;
+
+    display: none;
+}
+
+.nav li:hover > ul
+{
+    display: block;
+}
+
+.nav li > ul li a
+{
+    padding: 10px;
+    font-size: 17px;
+    text-transform: none;
+}
+
+.nav li > ul li ul
+{
+    min-width: 150px;
+    position: absolute;
+    right: -217.2px;
+    top: 26px;
+}
+
+.npmsa
+{
+    min-width: 197px;
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+
+.orga
+{
+    min-width: 200.5px;
+    position: absolute;
+    right: 16px;
+    top: 69px;
+}
+
+/*/ Nav /*/
+
+
+
+
+/* Container */
+
+.container
+{
+    width: 100%;
+    max-width: 1100px;
+
+    overflow: hidden;
+
+    margin: 0 auto;
+}
+
+
+
+
+/* Section */
+
+.section
+{
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+
+    background: url(../image/Background/1.jpg) center no-repeat;
+    background-size: cover;
+}
+
+/* Characters */
+
+.characters
+{
+    position: absolute;
+    top: 36.5%;
+    left: 2%;
+    z-index: 1;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.char__item
+{
+    border: 4px solid black;
+
+    width: 300px;
+    height: 300px;
+
+    margin: 0 30px;
+
+    position: relative;
+}
+
+.char__item:hover .char__text
+{
+    opacity: 1;
+    transition: font-size .15s linear; 
+}
+
+.kaidou
+{
+    background: linear-gradient(to bottom, #000000, #4c00ff);
+}
+
+.kaidou img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.char__item:hover .kaidou img{
+    opacity: .4;
+}
+
+.big__mom
+{
+    background: linear-gradient(to bottom, #000000, #f942ff);
+}
+
+.big__mom img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.char__item:hover .big__mom img{
+    opacity: .4;
+}
+
+.shanks
+{
+    background: linear-gradient(to bottom, #000000, #700000);
+}
+
+.shanks img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.char__item:hover .shanks img{
+    opacity: .4;
+}
+
+.black__beard
+{
+    background: linear-gradient(to bottom, #000000, #000000);
+}
+
+.black__beard img
+{
+    
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.char__item:hover .black__beard img{
+    opacity: .4;
+}
+
+.about__img img{
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.char__text
+{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+
+    opacity: 0;
+
+    color: #fff;
+
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+    
+    transition: opacity .2s linear, font-size .2s linear;
+
+    cursor: pointer;
+}
